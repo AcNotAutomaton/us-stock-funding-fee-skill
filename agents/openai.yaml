@@ -1,0 +1,3 @@
+interface:
+  display_name: "US Stock Funding Fee"
+  short_description: "比较汇丰香港与嘉信的双向资金路径手续费与折损"
