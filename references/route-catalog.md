@@ -9,7 +9,7 @@
 | 一 | 汇丰香港 HKD → 嘉信指定的港币收款路径 → 嘉信兑换为 USD 入账 | 汇损约 0.16% | 截图估计的嘉信端兑换折损，不是电汇费。须取得适用于本人账户的 HKD 收款指示；不得自行猜测本地收款账户或 FPS 支持情况。实际兑换率不保证，银行转账费用另计。 |
 | 二 | 汇丰香港 USD → 国际美元电汇 → 嘉信指定收款银行及归户账户 → 嘉信 USD 入账 | 21.88 USD | 截图固定成本假设，未核实组成及适用收费选项；汇丰发汇费、代理行扣费应核对。按本人嘉信账户最新指示填写收款人及归户附言。 |
 | 三 | 汇丰香港 HKD → Wise 换为 USD → 嘉信关联本人 Wise USD 账户，并由嘉信发起 ACH 拉取 | 兑换费约 0.4%；USD 拉取段按用户说明为 0 | 有条件可用；港币换美元仍有兑换成本。须有支持扣款的 Wise USD 账户资料，完成嘉信外部账户关联及验证，并备足 USD 余额。汇丰到 Wise 的港币转账费按实际计，不自动套用方案四的美元路径收费。 |
-| 四 | 汇丰香港 USD → 本人 Wise USD 余额 → 嘉信关联该账户并发起 ACH 拉取 → 嘉信 USD 入账 | 汇丰到 Wise：10 HKD；Wise USD 到嘉信：0（用户提供） | 按用户于 2026-09-26 补充的具体路径建模，有条件可用；全程保持 USD 时无换汇损失。需完成外部账户验证、授权扣款并有足额 USD。10 HKD 为用户所述汇丰到 Wise 的费用，不推广为所有账户及付款方式的统一收费。 |
+| 四 | 汇丰香港 USD → 本人 Wise USD 余额 → 嘉信关联该账户并发起 ACH 拉取 → 嘉信 USD 入账 | 香港本地 CHATS 入 Wise：Wise 收款费 10 HKD 或等值；Wise USD 到嘉信：0（用户提供） | 有条件可用；使用 Wise 香港多币种收款资料，经汇丰本地 RTGS／CHATS 汇 USD 时，汇丰本行发汇费 0，10 HKD 是 Wise 收款费。需有可用香港收款资料、完成嘉信外部账户验证与扣款授权，并备足 USD。不得推广到国际 SWIFT 或其他付款方式；全程保持 USD 时无换汇损失。 |
 | 五 | 汇丰香港 USD → Global Transfers 至本人 HSBC US USD 账户 → 适用的 ACH 转账 → 本人嘉信账户 | 0 转账手续费（有条件） | 须拥有可用 HSBC US 账户、符合汇丰 Global Transfers 免手续费资格，并完成嘉信 ACH 关联及资格确认；“有美卡”不等于满足条件。HKD 先换 USD 的汇差、账户维护成本不在零转账费中。 |
 
 ### 官方核查（2026-09-26）
@@ -22,7 +22,7 @@
 - [嘉信国际电汇指引](https://international.schwab.com/content/how-to-fund-your-account)：收款人通常为嘉信公司，通过附言指定个人账户；须以登录后指示为准。
 - [汇丰香港 Global Transfers](https://www.hsbc.com.hk/transfer-payments/products/international/global-transfers/)：支持美国；页面列明 Global Private Banking、Premier Elite、Premier、HSBC One 客户享免手续费，币种和账户类型仍有限制。
 
-上述来源不证明截图中的 0.16%、21.88 USD、0.4% 或 10 HKD 是当前全程成本。截图中的每条路径也不代表对所有地区及账户类型均可用。
+上述来源不证明截图中的 0.16%、21.88 USD、0.4% 是当前全程成本。方案四的 10 HKD 于 2026-10-10 另查 [Wise 香港收款资料](https://wise.com/help/articles/12CQfcpIVOHULnFNNzBgmE/how-do-i-receive-money-with-my-hkd-account-details) 与 [汇丰本地 RTGS 说明](https://www.hsbc.com.hk/transfer-payments/products/local/)：该费用为 Wise 本地 CHATS 收款费，而非汇丰发汇费；详见 [香港美元汇入华美](hong-kong-to-east-west-bank.md) 的本地入 Wise 环节，不套用其 Wise 主动出款费到嘉信拉取段。截图中的每条路径不代表对所有地区及账户类型均可用。
 
 ## 出金：嘉信 → 汇丰香港
 
