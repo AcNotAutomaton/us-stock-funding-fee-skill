@@ -1,13 +1,13 @@
 ---
 name: us-stock-funding-fee-skill
-description: Explain and compare mainland China bank USD/HKD remittances to Hong Kong, conditional fee waivers and RMB-to-HKD Payment Connect; HSBC Hong Kong–Charles Schwab funding; Schwab USD withdrawals to US East West Bank; and Hong Kong bank transfers to East West Bank via Wise or Hang Seng Global Money+. Distinguish starting currency, FX costs, sender-only waivers and all-in costs; Schwab-to-HSBC routes remain provisional.
+description: Explain and compare mainland China bank USD/HKD remittances to Hong Kong and conditional fee waivers; HSBC Hong Kong–Charles Schwab funding; Schwab USD withdrawals to US East West Bank; and Hong Kong bank transfers to East West Bank via Wise or Hang Seng Global Money+. Distinguish starting currency, FX costs, sender-only waivers and all-in costs; Schwab-to-HSBC routes remain provisional.
 ---
 
 # 内地、香港银行与美股账户资金路径比较
 
 ## 用途与边界
 
-- 内地银行 → 香港银行：比较已有 USD／HKD 现汇的原币跨境转账，以及人民币经跨境支付通以港币到账的独立分支。核对账户等级、同名要求、操作入口、优惠期限和各段收费，详见 [内地汇款至香港](references/mainland-to-hong-kong.md)。使用 M 系列编号，不占用汇丰香港 → 嘉信的五方案编号。
+- 内地银行 → 香港银行：比较已有 USD／HKD 现汇的原币跨境转账；人民币起始另计购汇成本。核对账户等级、同名要求、操作入口、优惠期限和各段收费，详见 [内地汇款至香港](references/mainland-to-hong-kong.md)。使用 M 系列编号，不占用汇丰香港 → 嘉信的五方案编号。
 - 入金 `inflow`：汇丰香港 → 嘉信，按初始币种比较五个方案。
 - 出金 `outflow`：嘉信 → 汇丰香港，现有路径映射仍待核实，只提供明确标注假设的模型分析；核实前不作确定性的最优路线推荐。
 - 嘉信 → 华美银行美国个人账户：比较美元 ACH 与美国境内电汇，详见 [华美银行出金路线](references/schwab-to-east-west-bank.md)。这不是上述“嘉信 → 汇丰香港”五方案之一。
@@ -41,9 +41,9 @@ description: Explain and compare mainland China bank USD/HKD remittances to Hong
 
 ## 输出规则
 
-- 内地 → 香港分开呈现 USD 原币、HKD 原币、RMB → HKD 路线，说明免费覆盖范围、资格、期限与尚未确认的费用。已有合资格账户优先比较，不单凭免汇款费推荐新开高门槛账户；若需先从另一家内地银行转入，再计入该段外币划转成本。已确认所有费用为零才给全程零费用／全额到账结论，否则使用条件式估计。涉及内地购付汇时提示真实用途和相应监管限制，不建议虚假用途、借额度或分拆规避。
+- 内地 → 香港分开呈现 USD 原币、HKD 原币及人民币先购汇后汇出的情况，说明免费覆盖范围、资格、期限与尚未确认的费用。已有合资格账户优先比较，不单凭免汇款费推荐新开高门槛账户；若需先从另一家内地银行转入，再计入该段外币划转成本。已确认所有费用为零才给全程零费用／全额到账结论，否则使用条件式估计。涉及内地购付汇时提示真实用途和相应监管限制，不建议虚假用途、借额度或分拆规避。
 - 内地汇港重点比较“兴业寰宇人生卡 → 本人汇丰香港”：明确对应收款银行，核对前 30 笔手续费及电讯费双免、汇丰香港收款费、购结汇价差优惠与活动期限，不能仅按通用 VIP 费率误设高等级门槛。人民币起始时比较实际购汇报价；已有 USD／HKD 不添加兑换。工行 → 工银亚洲、中行 → 中银香港、建行跨境直联 → 建行亚洲也纳入用户补充的全程免费候选；区分用户信息与官方核验，资格或某段费用待确认不等于路线不可行。不要把“兴业汇率好”写成所有时点、币种均最优。
-- 每条免费路线写明完整的汇出银行、收款银行和专用通道，不只写“汇到香港免费”。汇丰中国 → 汇丰香港、渣打中国 → 渣打香港、恒生中国 → 恒生香港等集团条件不能套用其他收款行；兴业 → 汇丰香港的零费结论也不能扩展为兴业汇往任意银行均免费。交行跨境支付通 → 建行亚洲单列为 RMB 起始／HKD 到账组合。
+- 每条免费路线写明完整的汇出银行、收款银行和专用通道，不只写“汇到香港免费”。汇丰中国 → 汇丰香港、渣打中国 → 渣打香港、恒生中国 → 恒生香港等集团条件不能套用其他收款行；兴业 → 汇丰香港的零费结论也不能扩展为兴业汇往任意银行均免费。
 - 汇丰香港的完整五方案介绍或比较：展示对应方向全部五项，包括初始币种、资金路径、成本和关键条件。具体金额比较可增加折算及可用状态；不匹配的方案注明“初始币种不匹配”，不纳入排名。
 - 嘉信 → 华美银行只比较 ACH 与境内电汇；分别报告嘉信侧费用、华美侧费用及净入账估计。若费用可能单独扣账，区分“转账本金”“华美账户净增加额”和“嘉信总支出”。
 - 香港 → 华美分段列明香港银行、Wise、代理行和华美侧费用；区分全程总预算与指定收款本金。官方规则、用户报价与网络个案分别标注；小红书案例须有可访问原帖或用户提供的证据，不能把站外转载写成小红书核验结果。
